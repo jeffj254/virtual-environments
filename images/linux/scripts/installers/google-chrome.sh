@@ -18,6 +18,8 @@ function GetChromiumRevision {
     # https://github.com/actions/virtual-environments/issues/5256
     if [ $REVISION -eq "1060" ]; then
         REVISION="961656"
+    elif [ $REVISION -eq "1086" ]; then
+        REVISION="982481"
     fi
     # Take the first part of the revision variable to search not only for a specific version,
     # but also for similar ones, so that we can get a previous one if the required revision is not found
